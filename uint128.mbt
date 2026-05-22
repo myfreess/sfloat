@@ -26,24 +26,6 @@ fn uint128_is_zero(a : UInt128) -> Bool {
 }
 
 ///|
-/// Ports `softfloat_eq128` from `primitives.h`.
-fn eq128(a : UInt128, b : UInt128) -> Bool {
-  a.hi == b.hi && a.lo == b.lo
-}
-
-///|
-/// Ports `softfloat_le128` from `primitives.h`.
-fn le128(a : UInt128, b : UInt128) -> Bool {
-  a.hi < b.hi || (a.hi == b.hi && a.lo <= b.lo)
-}
-
-///|
-/// Ports `softfloat_lt128` from `primitives.h`.
-fn lt128(a : UInt128, b : UInt128) -> Bool {
-  a.hi < b.hi || (a.hi == b.hi && a.lo < b.lo)
-}
-
-///|
 /// Ports `softfloat_add128` from `s_add128.c`.
 fn add128(a : UInt128, b : UInt128) -> UInt128 {
   let lo = a.lo + b.lo
@@ -71,38 +53,6 @@ fn short_shift_left128(a : UInt128, dist : Int) -> UInt128 {
 }
 
 ///|
-/// Ports `softfloat_shortShiftRight128` from `s_shortShiftRight128.c`.
-fn short_shift_right128(a : UInt128, dist : Int) -> UInt128 {
-  if dist <= 0 {
-    a
-  } else if dist < 64 {
-    { hi: a.hi >> dist, lo: (a.hi << (64 - dist)) | (a.lo >> dist) }
-  } else if dist < 128 {
-    { hi: 0UL, lo: a.hi >> (dist - 64) }
-  } else {
-    uint128_zero()
-  }
-}
-
-///|
-/// Typed 128-bit equivalent of `softfloat_add128M`.
-fn add128_m(a : UInt128, b : UInt128) -> UInt128 {
-  add128(a, b)
-}
-
-///|
-/// Typed 128-bit equivalent of `softfloat_sub128M`.
-fn sub128_m(a : UInt128, b : UInt128) -> UInt128 {
-  sub128(a, b)
-}
-
-///|
-/// Typed 128-bit equivalent of `softfloat_negX128M`.
-fn negx128_m(a : UInt128) -> UInt128 {
-  neg128(a)
-}
-
-///|
 /// Typed 128-bit equivalent of `softfloat_shiftLeft128M`.
 fn shift_left128_m(a : UInt128, dist : Int) -> UInt128 {
   if dist <= 0 {
@@ -114,12 +64,6 @@ fn shift_left128_m(a : UInt128, dist : Int) -> UInt128 {
   } else {
     uint128_zero()
   }
-}
-
-///|
-/// Typed 128-bit equivalent of `softfloat_shortShiftRight128M`.
-fn short_shift_right128_m(a : UInt128, dist : Int) -> UInt128 {
-  short_shift_right128(a, dist)
 }
 
 ///|

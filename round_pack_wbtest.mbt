@@ -7,13 +7,6 @@ test "norm_subnormal helpers match softfloat shift formulas" {
   @debug.assert_eq(f16_max.exp, 0)
   @debug.assert_eq(f16_max.sig, 0x07FE)
 
-  let bf16_min = norm_subnormal_bf16_sig(0x0001)
-  @debug.assert_eq(bf16_min.exp, -6)
-  @debug.assert_eq(bf16_min.sig, 0x0080)
-  let bf16_max = norm_subnormal_bf16_sig(0x007F)
-  @debug.assert_eq(bf16_max.exp, 0)
-  @debug.assert_eq(bf16_max.sig, 0x00FE)
-
   let f32_min = norm_subnormal_f32_sig(0x00000001U)
   @debug.assert_eq(f32_min.exp, -22)
   @debug.assert_eq(f32_min.sig, 0x00800000U)

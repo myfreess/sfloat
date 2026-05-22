@@ -109,16 +109,6 @@ fn shift_right_jam64(a : UInt64, dist : Int) -> UInt64 {
 }
 
 ///|
-/// Ports `softfloat_shortShiftRightJam64Extra` from `primitives.h`.
-fn short_shift_right_jam64_extra(
-  a : UInt64,
-  extra : UInt64,
-  dist : Int,
-) -> UInt64Extra {
-  shift_right_jam64_extra(a, extra, dist)
-}
-
-///|
 /// Ports `softfloat_shiftRightJam64Extra` from `s_shiftRightJam64Extra.c`.
 fn shift_right_jam64_extra(
   a : UInt64,
@@ -174,10 +164,4 @@ fn shift_right_jam128(a : UInt128, dist : Int) -> UInt128 {
   } else {
     { hi: 0UL, lo: jam_bit64(!uint128_is_zero(a)) }
   }
-}
-
-///|
-/// Typed 128-bit equivalent of `softfloat_shiftRightJam128M`.
-fn shift_right_jam128_m(a : UInt128, dist : Int) -> UInt128 {
-  shift_right_jam128(a, dist)
 }

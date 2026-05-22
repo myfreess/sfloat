@@ -20,18 +20,6 @@ pub(all) enum RoundingMode {
 } derive(Eq)
 
 ///|
-fn RoundingMode::softfloat_code(self : RoundingMode) -> UInt {
-  match self {
-    NearEven => 0U
-    MinMag => 1U
-    Min => 2U
-    Max => 3U
-    NearMaxMag => 4U
-    Odd => 6U
-  }
-}
-
-///|
 /// SoftFloat underflow tininess detection mode.
 ///
 /// This setting only controls when an operation raises the `Underflow` flag;
@@ -46,14 +34,6 @@ pub(all) enum TininessMode {
   BeforeRounding
   AfterRounding
 } derive(Eq)
-
-///|
-fn TininessMode::softfloat_code(self : TininessMode) -> UInt {
-  match self {
-    BeforeRounding => 0U
-    AfterRounding => 1U
-  }
-}
 
 ///|
 /// SoftFloat specialization profile.

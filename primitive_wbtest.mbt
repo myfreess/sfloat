@@ -68,10 +68,6 @@ test "uint128 compare add sub shift and negation helpers" {
   let zero = uint128_zero()
   let one = { hi: 0UL, lo: 1UL }
   let high = { hi: 1UL, lo: 0UL }
-  @debug.assert_eq(eq128(zero, { hi: 0UL, lo: 0UL }), true)
-  @debug.assert_eq(le128(one, high), true)
-  @debug.assert_eq(lt128(one, high), true)
-  @debug.assert_eq(lt128(high, one), false)
 
   let carry = add128({ hi: 2UL, lo: 0xFFFFFFFFFFFFFFFFUL }, one)
   assert_u128_eq(carry, { hi: 3UL, lo: 0UL })
@@ -88,15 +84,6 @@ test "uint128 compare add sub shift and negation helpers" {
   assert_u128_eq(shift_left128_m(one, 64), high)
   assert_u128_eq(shift_left128_m(one, 65), { hi: 2UL, lo: 0UL })
   assert_u128_eq(shift_left128_m(one, 129), zero)
-  assert_u128_eq(short_shift_right128(high, 1), {
-    hi: 0UL,
-    lo: 0x8000000000000000UL,
-  })
-  assert_u128_eq(short_shift_right128_m(high, 64), one)
-  assert_u128_eq(add128_m(one, high), { hi: 1UL, lo: 1UL })
-  assert_u128_eq(sub128_m(high, one), { hi: 0UL, lo: 0xFFFFFFFFFFFFFFFFUL })
-  assert_u128_eq(negx128_m(one), neg128(one))
-  assert_u128_eq(shift_right_jam128_m(high, 65), one)
 }
 
 ///|

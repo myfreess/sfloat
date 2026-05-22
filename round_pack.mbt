@@ -59,13 +59,6 @@ fn norm_subnormal_f16_sig(sig : UInt16) -> ExpSig16 {
 }
 
 ///|
-/// Ports `softfloat_normSubnormalBF16Sig` from `s_normSubnormalBF16Sig.c`.
-fn norm_subnormal_bf16_sig(sig : UInt16) -> ExpSig16 {
-  let shift_dist = count_leading_zeros16(sig) - 8
-  { exp: 1 - shift_dist, sig: sig << shift_dist }
-}
-
-///|
 /// Ports `softfloat_normSubnormalF32Sig` from `s_normSubnormalF32Sig.c`.
 fn norm_subnormal_f32_sig(sig : UInt) -> ExpSig32 {
   let shift_dist = count_leading_zeros32(sig) - 8

@@ -34,8 +34,6 @@ test "native float bridges reinterpret bits only" {
 ///|
 test "context defaults and flag accumulation" {
   let context = Context::default()
-  @debug.assert_eq(context.rounding.softfloat_code(), 0U)
-  @debug.assert_eq(context.tininess.softfloat_code(), 1U)
   @debug.assert_eq(context.flags.to_bits(), 0U)
   @debug.assert_eq(context.specialization == X86_8086SSE, true)
   let raised = context
@@ -61,8 +59,6 @@ test "field helpers match softfloat masks" {
   @debug.assert_eq(exp_bf16_ui(0x7F80), 0xFF)
   @debug.assert_eq(frac_bf16_ui(0x007F), 0x007F)
   @debug.assert_eq(pack_to_bf16_ui(false, 0xFF, 0x0040), 0x7FC0)
-  @debug.assert_eq(is_nan_bf16_ui(0x7FC0), true)
-  @debug.assert_eq(is_nan_bf16_ui(0x7F80), false)
 
   @debug.assert_eq(sign_f32_ui(0x80000000U), true)
   @debug.assert_eq(exp_f32_ui(0x7F800000U), 0xFF)

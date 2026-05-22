@@ -55,12 +55,6 @@ fn pack_to_bf16_ui(sign : Bool, exp : Int, sig : UInt16) -> UInt16 {
 }
 
 ///|
-/// Ports `isNaNBF16UI` from SoftFloat `internals.h`.
-fn is_nan_bf16_ui(bits : UInt16) -> Bool {
-  (bits & 0x7F80) == 0x7F80 && (bits & 0x007F) != 0
-}
-
-///|
 /// Ports `signF32UI` from SoftFloat `internals.h`.
 fn sign_f32_ui(bits : UInt) -> Bool {
   bits >> 31 != 0U
