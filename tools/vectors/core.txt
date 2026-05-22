@@ -1,0 +1,180 @@
+x86_8086_sse ui32_to_f16 near_even after 1 00000001 3C00 00
+riscv ui32_to_f16 near_even after 1 00000001 3C00 00
+x86_8086_sse ui32_to_f32 near_even after 1 00000001 3F800000 00
+riscv ui32_to_f32 near_even after 1 00000001 3F800000 00
+x86_8086_sse ui32_to_f64 near_even after 1 00000001 3FF0000000000000 00
+riscv ui32_to_f64 near_even after 1 00000001 3FF0000000000000 00
+x86_8086_sse ui64_to_f16 near_even after 1 0000000000000001 3C00 00
+riscv ui64_to_f16 near_even after 1 0000000000000001 3C00 00
+x86_8086_sse ui64_to_f32 near_even after 1 0000000000000001 3F800000 00
+riscv ui64_to_f32 near_even after 1 0000000000000001 3F800000 00
+x86_8086_sse ui64_to_f64 near_even after 1 0000000000000001 3FF0000000000000 00
+riscv ui64_to_f64 near_even after 1 0000000000000001 3FF0000000000000 00
+x86_8086_sse i32_to_f16 near_even after 1 FFFFFFFF BC00 00
+riscv i32_to_f16 near_even after 1 FFFFFFFF BC00 00
+x86_8086_sse i32_to_f32 near_even after 1 FFFFFFFF BF800000 00
+riscv i32_to_f32 near_even after 1 FFFFFFFF BF800000 00
+x86_8086_sse i32_to_f64 near_even after 1 FFFFFFFF BFF0000000000000 00
+riscv i32_to_f64 near_even after 1 FFFFFFFF BFF0000000000000 00
+x86_8086_sse i64_to_f16 near_even after 1 FFFFFFFFFFFFFFFF BC00 00
+riscv i64_to_f16 near_even after 1 FFFFFFFFFFFFFFFF BC00 00
+x86_8086_sse i64_to_f32 near_even after 1 FFFFFFFFFFFFFFFF BF800000 00
+riscv i64_to_f32 near_even after 1 FFFFFFFFFFFFFFFF BF800000 00
+x86_8086_sse i64_to_f64 near_even after 1 FFFFFFFFFFFFFFFF BFF0000000000000 00
+riscv i64_to_f64 near_even after 1 FFFFFFFFFFFFFFFF BFF0000000000000 00
+x86_8086_sse bf16_to_f32 near_even after 1 3F80 3F800000 00
+riscv bf16_to_f32 near_even after 1 3F80 3F800000 00
+x86_8086_sse f32_to_bf16 near_even after 1 3F800000 3F80 00
+riscv f32_to_bf16 near_even after 1 3F800000 3F80 00
+x86_8086_sse bf16_is_signaling_nan near_even after 1 7F81 1 00
+riscv bf16_is_signaling_nan near_even after 1 7F81 1 00
+x86_8086_sse f16_to_ui32 near_even after 1 3E00 00000002 01
+riscv f16_to_ui32 near_even after 1 3E00 00000002 01
+x86_8086_sse f16_to_ui64 near_even after 1 3E00 0000000000000002 01
+riscv f16_to_ui64 near_even after 1 3E00 0000000000000002 01
+x86_8086_sse f16_to_i32 near_even after 1 3E00 00000002 01
+riscv f16_to_i32 near_even after 1 3E00 00000002 01
+x86_8086_sse f16_to_i64 near_even after 1 3E00 0000000000000002 01
+riscv f16_to_i64 near_even after 1 3E00 0000000000000002 01
+x86_8086_sse f16_to_ui32_min_mag near_even after 1 3E00 00000001 01
+riscv f16_to_ui32_min_mag near_even after 1 3E00 00000001 01
+x86_8086_sse f16_to_ui64_min_mag near_even after 1 3E00 0000000000000001 01
+riscv f16_to_ui64_min_mag near_even after 1 3E00 0000000000000001 01
+x86_8086_sse f16_to_i32_min_mag near_even after 1 3E00 00000001 01
+riscv f16_to_i32_min_mag near_even after 1 3E00 00000001 01
+x86_8086_sse f16_to_i64_min_mag near_even after 1 3E00 0000000000000001 01
+riscv f16_to_i64_min_mag near_even after 1 3E00 0000000000000001 01
+x86_8086_sse f16_to_f32 near_even after 1 3C00 3F800000 00
+riscv f16_to_f32 near_even after 1 3C00 3F800000 00
+x86_8086_sse f16_to_f64 near_even after 1 3C00 3FF0000000000000 00
+riscv f16_to_f64 near_even after 1 3C00 3FF0000000000000 00
+x86_8086_sse f16_round_to_int near_even after 1 3E00 4000 01
+riscv f16_round_to_int near_even after 1 3E00 4000 01
+x86_8086_sse f16_add near_even after 1 3C00 3C00 4000 00
+riscv f16_add near_even after 1 3C00 3C00 4000 00
+x86_8086_sse f16_sub near_even after 1 4000 3C00 3C00 00
+riscv f16_sub near_even after 1 4000 3C00 3C00 00
+x86_8086_sse f16_mul near_even after 1 3C00 4000 4000 00
+riscv f16_mul near_even after 1 3C00 4000 4000 00
+x86_8086_sse f16_mul_add near_even after 1 4000 4200 3C00 4700 00
+riscv f16_mul_add near_even after 1 4000 4200 3C00 4700 00
+x86_8086_sse f16_div near_even after 1 3C00 4000 3800 00
+riscv f16_div near_even after 1 3C00 4000 3800 00
+x86_8086_sse f16_rem near_even after 1 4500 4000 3C00 00
+riscv f16_rem near_even after 1 4500 4000 3C00 00
+x86_8086_sse f16_sqrt near_even after 1 4000 3DA8 01
+riscv f16_sqrt near_even after 1 4000 3DA8 01
+x86_8086_sse f16_eq near_even after 1 8000 0000 1 00
+riscv f16_eq near_even after 1 8000 0000 1 00
+x86_8086_sse f16_le near_even after 1 3C00 4000 1 00
+riscv f16_le near_even after 1 3C00 4000 1 00
+x86_8086_sse f16_lt near_even after 1 3C00 4000 1 00
+riscv f16_lt near_even after 1 3C00 4000 1 00
+x86_8086_sse f16_eq_signaling near_even after 1 7E00 3C00 0 10
+riscv f16_eq_signaling near_even after 1 7E00 3C00 0 10
+x86_8086_sse f16_le_quiet near_even after 1 7C01 3C00 0 10
+riscv f16_le_quiet near_even after 1 7C01 3C00 0 10
+x86_8086_sse f16_lt_quiet near_even after 1 7C01 3C00 0 10
+riscv f16_lt_quiet near_even after 1 7C01 3C00 0 10
+x86_8086_sse f16_is_signaling_nan near_even after 1 7C01 1 00
+riscv f16_is_signaling_nan near_even after 1 7C01 1 00
+x86_8086_sse f32_to_ui32 near_even after 1 3FC00000 00000002 01
+riscv f32_to_ui32 near_even after 1 3FC00000 00000002 01
+x86_8086_sse f32_to_ui64 near_even after 1 3FC00000 0000000000000002 01
+riscv f32_to_ui64 near_even after 1 3FC00000 0000000000000002 01
+x86_8086_sse f32_to_i32 near_even after 1 3FC00000 00000002 01
+riscv f32_to_i32 near_even after 1 3FC00000 00000002 01
+x86_8086_sse f32_to_i64 near_even after 1 3FC00000 0000000000000002 01
+riscv f32_to_i64 near_even after 1 3FC00000 0000000000000002 01
+x86_8086_sse f32_to_ui32_min_mag near_even after 1 3FC00000 00000001 01
+riscv f32_to_ui32_min_mag near_even after 1 3FC00000 00000001 01
+x86_8086_sse f32_to_ui64_min_mag near_even after 1 3FC00000 0000000000000001 01
+riscv f32_to_ui64_min_mag near_even after 1 3FC00000 0000000000000001 01
+x86_8086_sse f32_to_i32_min_mag near_even after 1 3FC00000 00000001 01
+riscv f32_to_i32_min_mag near_even after 1 3FC00000 00000001 01
+x86_8086_sse f32_to_i64_min_mag near_even after 1 3FC00000 0000000000000001 01
+riscv f32_to_i64_min_mag near_even after 1 3FC00000 0000000000000001 01
+x86_8086_sse f32_to_f16 near_even after 1 3F800000 3C00 00
+riscv f32_to_f16 near_even after 1 3F800000 3C00 00
+x86_8086_sse f32_to_f64 near_even after 1 3F800000 3FF0000000000000 00
+riscv f32_to_f64 near_even after 1 3F800000 3FF0000000000000 00
+x86_8086_sse f32_round_to_int near_even after 1 3FC00000 40000000 01
+riscv f32_round_to_int near_even after 1 3FC00000 40000000 01
+x86_8086_sse f32_add near_even after 1 3F800000 3F800000 40000000 00
+riscv f32_add near_even after 1 3F800000 3F800000 40000000 00
+x86_8086_sse f32_sub near_even after 1 40000000 3F800000 3F800000 00
+riscv f32_sub near_even after 1 40000000 3F800000 3F800000 00
+x86_8086_sse f32_mul near_even after 1 3F800000 40000000 40000000 00
+riscv f32_mul near_even after 1 3F800000 40000000 40000000 00
+x86_8086_sse f32_mul_add near_even after 1 40000000 40400000 3F800000 40E00000 00
+riscv f32_mul_add near_even after 1 40000000 40400000 3F800000 40E00000 00
+x86_8086_sse f32_div near_even after 1 3F800000 40400000 3EAAAAAB 01
+riscv f32_div near_even after 1 3F800000 40400000 3EAAAAAB 01
+x86_8086_sse f32_rem near_even after 1 40A00000 40000000 3F800000 00
+riscv f32_rem near_even after 1 40A00000 40000000 3F800000 00
+x86_8086_sse f32_sqrt near_even after 1 40000000 3FB504F3 01
+riscv f32_sqrt near_even after 1 40000000 3FB504F3 01
+x86_8086_sse f32_eq near_even after 1 80000000 00000000 1 00
+riscv f32_eq near_even after 1 80000000 00000000 1 00
+x86_8086_sse f32_le near_even after 1 3F800000 40000000 1 00
+riscv f32_le near_even after 1 3F800000 40000000 1 00
+x86_8086_sse f32_lt near_even after 1 3F800000 40000000 1 00
+riscv f32_lt near_even after 1 3F800000 40000000 1 00
+x86_8086_sse f32_eq_signaling near_even after 1 7FC00000 3F800000 0 10
+riscv f32_eq_signaling near_even after 1 7FC00000 3F800000 0 10
+x86_8086_sse f32_le_quiet near_even after 1 7F800001 3F800000 0 10
+riscv f32_le_quiet near_even after 1 7F800001 3F800000 0 10
+x86_8086_sse f32_lt_quiet near_even after 1 7F800001 3F800000 0 10
+riscv f32_lt_quiet near_even after 1 7F800001 3F800000 0 10
+x86_8086_sse f32_is_signaling_nan near_even after 1 7F800001 1 00
+riscv f32_is_signaling_nan near_even after 1 7F800001 1 00
+x86_8086_sse f64_to_ui32 near_even after 1 3FF8000000000000 00000002 01
+riscv f64_to_ui32 near_even after 1 3FF8000000000000 00000002 01
+x86_8086_sse f64_to_ui64 near_even after 1 3FF8000000000000 0000000000000002 01
+riscv f64_to_ui64 near_even after 1 3FF8000000000000 0000000000000002 01
+x86_8086_sse f64_to_i32 near_even after 1 3FF8000000000000 00000002 01
+riscv f64_to_i32 near_even after 1 3FF8000000000000 00000002 01
+x86_8086_sse f64_to_i64 near_even after 1 3FF8000000000000 0000000000000002 01
+riscv f64_to_i64 near_even after 1 3FF8000000000000 0000000000000002 01
+x86_8086_sse f64_to_ui32_min_mag near_even after 1 3FF8000000000000 00000001 01
+riscv f64_to_ui32_min_mag near_even after 1 3FF8000000000000 00000001 01
+x86_8086_sse f64_to_ui64_min_mag near_even after 1 3FF8000000000000 0000000000000001 01
+riscv f64_to_ui64_min_mag near_even after 1 3FF8000000000000 0000000000000001 01
+x86_8086_sse f64_to_i32_min_mag near_even after 1 3FF8000000000000 00000001 01
+riscv f64_to_i32_min_mag near_even after 1 3FF8000000000000 00000001 01
+x86_8086_sse f64_to_i64_min_mag near_even after 1 3FF8000000000000 0000000000000001 01
+riscv f64_to_i64_min_mag near_even after 1 3FF8000000000000 0000000000000001 01
+x86_8086_sse f64_to_f16 near_even after 1 3FF0000000000000 3C00 00
+riscv f64_to_f16 near_even after 1 3FF0000000000000 3C00 00
+x86_8086_sse f64_to_f32 near_even after 1 3FF0000000000000 3F800000 00
+riscv f64_to_f32 near_even after 1 3FF0000000000000 3F800000 00
+x86_8086_sse f64_round_to_int near_even after 1 3FF8000000000000 4000000000000000 01
+riscv f64_round_to_int near_even after 1 3FF8000000000000 4000000000000000 01
+x86_8086_sse f64_add near_even after 1 3FF0000000000000 3FF0000000000000 4000000000000000 00
+riscv f64_add near_even after 1 3FF0000000000000 3FF0000000000000 4000000000000000 00
+x86_8086_sse f64_sub near_even after 1 4000000000000000 3FF0000000000000 3FF0000000000000 00
+riscv f64_sub near_even after 1 4000000000000000 3FF0000000000000 3FF0000000000000 00
+x86_8086_sse f64_mul near_even after 1 3FF0000000000000 4000000000000000 4000000000000000 00
+riscv f64_mul near_even after 1 3FF0000000000000 4000000000000000 4000000000000000 00
+x86_8086_sse f64_mul_add near_even after 1 4000000000000000 4008000000000000 3FF0000000000000 401C000000000000 00
+riscv f64_mul_add near_even after 1 4000000000000000 4008000000000000 3FF0000000000000 401C000000000000 00
+x86_8086_sse f64_div near_even after 1 3FF0000000000000 4008000000000000 3FD5555555555555 01
+riscv f64_div near_even after 1 3FF0000000000000 4008000000000000 3FD5555555555555 01
+x86_8086_sse f64_rem near_even after 1 4014000000000000 4000000000000000 3FF0000000000000 00
+riscv f64_rem near_even after 1 4014000000000000 4000000000000000 3FF0000000000000 00
+x86_8086_sse f64_sqrt near_even after 1 4000000000000000 3FF6A09E667F3BCD 01
+riscv f64_sqrt near_even after 1 4000000000000000 3FF6A09E667F3BCD 01
+x86_8086_sse f64_eq near_even after 1 8000000000000000 0000000000000000 1 00
+riscv f64_eq near_even after 1 8000000000000000 0000000000000000 1 00
+x86_8086_sse f64_le near_even after 1 3FF0000000000000 4000000000000000 1 00
+riscv f64_le near_even after 1 3FF0000000000000 4000000000000000 1 00
+x86_8086_sse f64_lt near_even after 1 3FF0000000000000 4000000000000000 1 00
+riscv f64_lt near_even after 1 3FF0000000000000 4000000000000000 1 00
+x86_8086_sse f64_eq_signaling near_even after 1 7FF8000000000000 3FF0000000000000 0 10
+riscv f64_eq_signaling near_even after 1 7FF8000000000000 3FF0000000000000 0 10
+x86_8086_sse f64_le_quiet near_even after 1 7FF0000000000001 3FF0000000000000 0 10
+riscv f64_le_quiet near_even after 1 7FF0000000000001 3FF0000000000000 0 10
+x86_8086_sse f64_lt_quiet near_even after 1 7FF0000000000001 3FF0000000000000 0 10
+riscv f64_lt_quiet near_even after 1 7FF0000000000001 3FF0000000000000 0 10
+x86_8086_sse f64_is_signaling_nan near_even after 1 7FF0000000000001 1 00
+riscv f64_is_signaling_nan near_even after 1 7FF0000000000001 1 00

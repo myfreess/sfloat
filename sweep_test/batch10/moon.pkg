@@ -1,0 +1,4 @@
+import {
+  "myfreess/softfloat" @sf,
+  "moonbitlang/core/debug",
+} for "test"

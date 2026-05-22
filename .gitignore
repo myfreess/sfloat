@@ -2,3 +2,6 @@ target/
 .mooncakes/
 _build
 berkeley-softfloat-3
+tools/oracle-8086-sse
+tools/oracle-riscv
+__pycache__/
